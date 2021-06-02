@@ -11,7 +11,9 @@
     "install:2d": "cd ./rapier2d-node && yarn install",
     "install:3d": "cd ./rapier3d-node && yarn install",
     "prebuild": "yarn install:2d && yarn install:3d",
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "publish:2d": "cd ./rapier2d-node && yarn publish",
+    "publish:3d": "cd ./rapier3d-node && yarn publish"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.11",

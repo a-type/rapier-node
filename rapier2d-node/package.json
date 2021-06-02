@@ -1,6 +1,6 @@
 {
   "name": "@a-type/rapier2d-node",
-  "version": "0.5.3",
+  "version": "0.5.3-rc.1",
   "main": "dist/rapier.js",
   "repository": "git@github.com:a-type/rapier-node.git",
   "author": "Grant Forrest <gaforres@gmail.com>",
