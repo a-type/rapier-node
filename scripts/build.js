@@ -95,14 +95,14 @@ function transformFilesForDimension(dir, is2d) {
 
   console.info('Compiling TS bindings');
   try {
-    execSync(`yarn tsc ./dist/rapier.ts`, {
+    execSync(`yarn tsc`, {
       cwd: `${__dirname}/../rapier2d-node`,
     });
   } catch (err) {
     console.warn("tsc produced errors, but that's expected");
   }
   try {
-    execSync(`yarn tsc ./dist/rapier.ts`, {
+    execSync(`yarn tsc`, {
       cwd: `${__dirname}/../rapier3d-node`,
     });
   } catch (err) {

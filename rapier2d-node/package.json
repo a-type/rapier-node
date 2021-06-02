@@ -2,6 +2,9 @@
   "name": "@a-type/rapier2d-node",
   "version": "0.5.3-rc.1",
   "main": "dist/rapier.js",
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:a-type/rapier-node.git",
   "author": "Grant Forrest <gaforres@gmail.com>",
   "license": "Apache 2.0",
