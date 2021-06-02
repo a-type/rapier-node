@@ -1,0 +1,11 @@
+{
+  "name": "@a-type/rapier3d-node",
+  "version": "0.5.3",
+  "main": "dist/rapier.js",
+  "repository": "git@github.com:a-type/rapier-node.git",
+  "author": "Grant Forrest <gaforres@gmail.com>",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "es2015",
+    "target": "es5",
+    "lib": [
+      "es5"
+    ],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true
+  },
+  "include": [
+    "./dist"
+  ],
+  "files": [
+    "./dist/rapier.ts"
+  ]
+}

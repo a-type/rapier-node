@@ -1,0 +1,3 @@
+[submodule "rapier.js"]
+	path = rapier.js
+	url = git@github.com:dimforge/rapier.js.git

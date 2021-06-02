@@ -1,0 +1,25 @@
+{
+  "name": "rapier-node",
+  "version": "0.5.3",
+  "main": "index.js",
+  "repository": "git@github.com:a-type/rapier-node.git",
+  "author": "Grant Forrest <gaforres@gmail.com>",
+  "license": "Apache 2.0",
+  "private": true,
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "install:2d": "cd ./rapier2d-node && yarn install",
+    "install:3d": "cd ./rapier3d-node && yarn install",
+    "prebuild": "yarn install:2d && yarn install:3d",
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.11",
+    "cpy": "^8.1.2",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.2",
+    "write": "^2.0.0"
+  }
+}
