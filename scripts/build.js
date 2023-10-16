@@ -95,6 +95,9 @@ function transformFilesForDimension(dir, is2d) {
 
   console.info('Compiling TS bindings');
   try {
+    execSync('yarn install', {
+      cwd: `${__dirname}/../rapier2d-node`,
+    });
     execSync(`yarn tsc`, {
       cwd: `${__dirname}/../rapier2d-node`,
     });
@@ -102,6 +105,9 @@ function transformFilesForDimension(dir, is2d) {
     console.warn("tsc produced errors, but that's expected");
   }
   try {
+    execSync('yarn install', {
+      cwd: `${__dirname}/../rapier3d-node`,
+    });
     execSync(`yarn tsc`, {
       cwd: `${__dirname}/../rapier3d-node`,
     });

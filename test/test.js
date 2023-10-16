@@ -12,7 +12,7 @@ let e2 = makeEntity(1, 0, -1, 0, 0.5);
 for (let i = 0; i < 60; i++) {
   world.step(events);
 
-  events.drainContactEvents((handle1, handle2, contactStarted) => {
+  events.drainCollisionEvents((handle1, handle2, contactStarted) => {
     console.log(
       `Contact between: ${handle1} and ${handle2}. Started: ${contactStarted}`,
     );
@@ -31,8 +31,7 @@ console.log('Simulation done.');
 
 // util function to make an rigid body entity with a circle collider
 function makeEntity(x, y, vx, vy, r) {
-  let bodyDesc = new Rapier.RigidBodyDesc(Rapier.BodyStatus.Dynamic);
-  bodyDesc.setTranslation(x, y);
+  let bodyDesc = Rapier.RigidBodyDesc.dynamic().setTranslation(x, y);
   let body = world.createRigidBody(bodyDesc);
   world.createCollider(Rapier.ColliderDesc.ball(r), body.handle);
   body.applyImpulse({ x: vx, y: vy }, true);
